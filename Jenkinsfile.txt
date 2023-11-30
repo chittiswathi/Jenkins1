@@ -1,0 +1,22 @@
+pipeline{
+
+agents any
+
+stages{
+
+stage("one"){
+steps{
+ echo 'Hi this is swathi'
+}
+
+}
+
+stage("Two"){
+steps{
+ input('Do you want to continue??')
+}
+}
+
+}
+
+}
