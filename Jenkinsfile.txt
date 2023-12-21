@@ -18,4 +18,17 @@ pipeline {
             }
         }
     }
+
+post{
+
+always{
+emailext body: '''Hi.
+
+Please find the jenkins pipeline status below
+
+
+Regards,
+swathi -''', subject: 'Jenkins pipeline status', to: 'ch.swathia409@gmail.com'
+}
+}
 }
